@@ -1,0 +1,22 @@
+.titleStyles {
+    color: black;
+	text-align: center;
+}
+
+.divStylesLeft {
+    width: 350px;
+    float: left;
+    margin: 10px;
+}
+.littleText {
+    font-size: 12px;
+}
+.underlineText {
+    border-bottom: 1px solid black;
+}
+
+.cardStyle {
+    width: 750px;
+    float: left;
+    padding: 20px;
+}

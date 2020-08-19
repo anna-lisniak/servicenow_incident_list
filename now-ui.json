@@ -1,0 +1,13 @@
+{
+	"components": {
+	    "x-524942-incident-list": {
+			"uiBuilder": {
+				"associatedTypes": ["global.core"],
+				"label": "Mu incidents list",
+				"icon": "chart-forecast-fill",
+				"description": "Incidents list"
+			  }
+	    }
+	},
+	"scopeName": "x_524942_test_in_0"
+}
