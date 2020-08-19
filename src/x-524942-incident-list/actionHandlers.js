@@ -37,7 +37,7 @@ export const actionHandlers = {
             });
         }
         else if(action.payload.item.id == 'check') {
-            dispatch('CHECK_INCIDENT', {
+            dispatch('FETCH_INCIDENT_INFO', {
                 sys_id
             });
         }
@@ -48,13 +48,13 @@ export const actionHandlers = {
         pathParams: ['sys_id'],
         successActionType: 'FETCH_INCIDENTS'
     }),
-    'CHECK_INCIDENT': createHttpEffect('api/now/table/incident/:sys_id', {
+    'FETCH_INCIDENT_INFO': createHttpEffect('api/now/table/incident/:sys_id', {
         method: 'GET',
         headers: {},
         pathParams: ['sys_id'],
-        successActionType: 'CHECK_SUCCESS'
+        successActionType: 'FETCH_INCIDENT_INFO_SUCCESS'
     }),
-    'CHECK_SUCCESS' (coeffects) {
+    'FETCH_INCIDENT_INFO_SUCCESS' (coeffects) {
         const { updateState } = coeffects;
         updateState({chekedIncident: coeffects.action.payload.result})
     },
